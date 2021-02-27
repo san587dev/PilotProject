@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite A]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="Browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="listener.MyTestNgListener"/>
+  </listeners>
+  <test thread-count="5" name="Test AA(failed)" verbose="0">
+    <classes>
+      <class name="suitea.TestAA">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testAA" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- suitea.TestAA -->
+    </classes>
+  </test> <!-- Test AA(failed) -->
+</suite> <!-- Failed suite [Suite A] -->

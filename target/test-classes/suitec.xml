@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite C">
+
+<!--    <listeners>
+        <listener class-name="listener.MyTestNgListener"></listener>
+    </listeners>
+-->
+
+    <test name="Test C">
+        <classes>
+            <class name="suitec.TestC">
+               <!-- <methods>
+                    <include name="testA"/>
+                </methods>-->
+            </class>
+        </classes>
+    </test>
+    <test name="Test CC">
+        <classes>
+            <class name="suitec.TestCC">
+                <!--<methods>
+                    <include name="testAA"/>
+                </methods>-->
+            </class>
+        </classes>
+    </test>
+</suite>

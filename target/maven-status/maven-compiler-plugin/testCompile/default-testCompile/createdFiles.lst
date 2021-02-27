@@ -1,0 +1,9 @@
+suitea\TestA.class
+suitec\TestCC.class
+testBase\TestBase.class
+suiteb\TestBB.class
+suitec\TestC.class
+listener\MyTestNgListener.class
+suitea\TestAA.class
+dataProvider\TestDataProvider.class
+suiteb\TestB.class

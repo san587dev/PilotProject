@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite C]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="Browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="listener.MyTestNgListener"/>
+  </listeners>
+  <test thread-count="5" name="Test C(failed)" verbose="0">
+    <classes>
+      <class name="suitec.TestC">
+        <methods>
+          <include name="testC" invocation-numbers="0 1"/>
+          <include name="quit"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- suitec.TestC -->
+    </classes>
+  </test> <!-- Test C(failed) -->
+  <test thread-count="5" name="Test CC(failed)" verbose="0">
+    <classes>
+      <class name="suitec.TestCC">
+        <methods>
+          <include name="quit"/>
+          <include name="init"/>
+          <include name="testCC" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- suitec.TestCC -->
+    </classes>
+  </test> <!-- Test CC(failed) -->
+</suite> <!-- Failed suite [Suite C] -->

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite A">
+
+<!--    <listeners>
+        <listener class-name="listener.MyTestNgListener"></listener>
+    </listeners>
+-->
+    <test name="Test A">
+        <classes>
+            <class name="suitea.TestA">
+                <methods>
+                    <include name="testA"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Test AA">
+        <classes>
+            <class name="suitea.TestAA">
+                <methods>
+                    <include name="testAA"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
