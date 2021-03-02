@@ -2,28 +2,34 @@
 <testng-results ignored="0" total="12" passed="6" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-02-25T09:25:47 CST" name="Suite B" finished-at="2021-02-25T09:26:00 CST" duration-ms="12238">
+  <suite started-at="2021-03-02T08:07:29 CST" name="Suite B" finished-at="2021-03-02T08:07:42 CST" duration-ms="12488">
     <groups>
+      <group name="sanity">
+        <method signature="TestB.testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@53aad5d5]" name="testB" class="suiteb.TestB"/>
+      </group> <!-- sanity -->
+      <group name="Browser">
+        <method signature="TestB.testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@53aad5d5]" name="testB" class="suiteb.TestB"/>
+      </group> <!-- Browser -->
     </groups>
-    <test started-at="2021-02-25T09:25:47 CST" name="Test B" finished-at="2021-02-25T09:25:54 CST" duration-ms="6120">
+    <test started-at="2021-03-02T08:07:29 CST" name="Test B" finished-at="2021-03-02T08:07:36 CST" duration-ms="6236">
       <class name="suiteb.TestB">
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suiteb.TestB@4f67eb2a]" started-at="2021-02-25T09:25:47 CST" name="init" finished-at="2021-02-25T09:25:47 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suiteb.TestB@53aad5d5]" started-at="2021-03-02T08:07:29 CST" name="init" finished-at="2021-03-02T08:07:29 CST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6e46d9f4]]>
+                <![CDATA[org.testng.TestRunner@493dfb8e]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestB.testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@4f67eb2a] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestB.testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@53aad5d5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@4f67eb2a]" started-at="2021-02-25T09:25:47 CST" name="testB" data-provider="dataSuiteB" finished-at="2021-02-25T09:25:50 CST" duration-ms="3010" status="PASS">
+        <test-method signature="testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@53aad5d5]" started-at="2021-03-02T08:07:29 CST" name="testB" data-provider="dataSuiteB" finished-at="2021-03-02T08:07:32 CST" duration-ms="3012" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,27 +45,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testB -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suiteb.TestB@4f67eb2a]" started-at="2021-02-25T09:25:50 CST" name="quit" finished-at="2021-02-25T09:25:50 CST" duration-ms="56" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteb.TestB@53aad5d5]" started-at="2021-03-02T08:07:32 CST" name="quit" finished-at="2021-03-02T08:07:32 CST" duration-ms="155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suiteb.TestB@4f67eb2a]" started-at="2021-02-25T09:25:50 CST" name="init" finished-at="2021-02-25T09:25:50 CST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suiteb.TestB@53aad5d5]" started-at="2021-03-02T08:07:32 CST" name="init" finished-at="2021-03-02T08:07:32 CST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6e46d9f4]]>
+                <![CDATA[org.testng.TestRunner@493dfb8e]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestB.testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@4f67eb2a] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestB.testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@53aad5d5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@4f67eb2a]" started-at="2021-02-25T09:25:50 CST" name="testB" data-provider="dataSuiteB" finished-at="2021-02-25T09:25:53 CST" duration-ms="3009" status="PASS">
+        <test-method signature="testB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestB@53aad5d5]" started-at="2021-03-02T08:07:32 CST" name="testB" data-provider="dataSuiteB" finished-at="2021-03-02T08:07:35 CST" duration-ms="3017" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,31 +81,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testB -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suiteb.TestB@4f67eb2a]" started-at="2021-02-25T09:25:54 CST" name="quit" finished-at="2021-02-25T09:25:54 CST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteb.TestB@53aad5d5]" started-at="2021-03-02T08:07:35 CST" name="quit" finished-at="2021-03-02T08:07:36 CST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- suiteb.TestB -->
     </test> <!-- Test B -->
-    <test started-at="2021-02-25T09:25:54 CST" name="Test BB" finished-at="2021-02-25T09:26:00 CST" duration-ms="6104">
+    <test started-at="2021-03-02T08:07:36 CST" name="Test BB" finished-at="2021-03-02T08:07:42 CST" duration-ms="6200">
       <class name="suiteb.TestBB">
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suiteb.TestBB@f381794]" started-at="2021-02-25T09:25:54 CST" name="init" finished-at="2021-02-25T09:25:54 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suiteb.TestBB@68e965f5]" started-at="2021-03-02T08:07:36 CST" name="init" finished-at="2021-03-02T08:07:36 CST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@21c64522]]>
+                <![CDATA[org.testng.TestRunner@9d157ff]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestBB.testBB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestBB@f381794] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestBB.testBB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestBB@68e965f5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testBB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestBB@f381794]" started-at="2021-02-25T09:25:54 CST" name="testBB" data-provider="dataSuiteB" finished-at="2021-02-25T09:25:57 CST" duration-ms="3005" status="PASS">
+        <test-method signature="testBB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestBB@68e965f5]" started-at="2021-03-02T08:07:36 CST" name="testBB" data-provider="dataSuiteB" finished-at="2021-03-02T08:07:39 CST" duration-ms="3012" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -115,27 +121,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBB -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suiteb.TestBB@f381794]" started-at="2021-02-25T09:25:57 CST" name="quit" finished-at="2021-02-25T09:25:57 CST" duration-ms="51" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteb.TestBB@68e965f5]" started-at="2021-03-02T08:07:39 CST" name="quit" finished-at="2021-03-02T08:07:39 CST" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suiteb.TestBB@f381794]" started-at="2021-02-25T09:25:57 CST" name="init" finished-at="2021-02-25T09:25:57 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suiteb.TestBB@68e965f5]" started-at="2021-03-02T08:07:39 CST" name="init" finished-at="2021-03-02T08:07:39 CST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@21c64522]]>
+                <![CDATA[org.testng.TestRunner@9d157ff]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestBB.testBB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestBB@f381794] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestBB.testBB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestBB@68e965f5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testBB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestBB@f381794]" started-at="2021-02-25T09:25:57 CST" name="testBB" data-provider="dataSuiteB" finished-at="2021-02-25T09:26:00 CST" duration-ms="3008" status="PASS">
+        <test-method signature="testBB(java.lang.String, java.lang.String)[pri:0, instance:suiteb.TestBB@68e965f5]" started-at="2021-03-02T08:07:39 CST" name="testBB" data-provider="dataSuiteB" finished-at="2021-03-02T08:07:42 CST" duration-ms="3013" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -151,35 +157,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBB -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suiteb.TestBB@f381794]" started-at="2021-02-25T09:26:00 CST" name="quit" finished-at="2021-02-25T09:26:00 CST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suiteb.TestBB@68e965f5]" started-at="2021-03-02T08:07:42 CST" name="quit" finished-at="2021-03-02T08:07:42 CST" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- suiteb.TestBB -->
     </test> <!-- Test BB -->
   </suite> <!-- Suite B -->
-  <suite started-at="2021-02-25T09:26:00 CST" name="Suite C" finished-at="2021-02-25T09:26:06 CST" duration-ms="6245">
+  <suite started-at="2021-03-02T08:07:42 CST" name="Suite C" finished-at="2021-03-02T08:07:49 CST" duration-ms="6704">
     <groups>
+      <group name="sanity">
+        <method signature="TestC.testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@2525ff7e]" name="testC" class="suitec.TestC"/>
+      </group> <!-- sanity -->
+      <group name="Browser">
+        <method signature="TestC.testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@2525ff7e]" name="testC" class="suitec.TestC"/>
+      </group> <!-- Browser -->
     </groups>
-    <test started-at="2021-02-25T09:26:00 CST" name="Test C" finished-at="2021-02-25T09:26:00 CST" duration-ms="71">
+    <test started-at="2021-03-02T08:07:42 CST" name="Test C" finished-at="2021-03-02T08:07:42 CST" duration-ms="435">
       <class name="suitec.TestC">
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitec.TestC@44a7bfbc]" started-at="2021-02-25T09:26:00 CST" name="init" finished-at="2021-02-25T09:26:00 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitec.TestC@2525ff7e]" started-at="2021-03-02T08:07:42 CST" name="init" finished-at="2021-03-02T08:07:42 CST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@460f76a6]]>
+                <![CDATA[org.testng.TestRunner@7c041b41]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestC.testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@44a7bfbc] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestC.testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@2525ff7e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@44a7bfbc]" started-at="2021-02-25T09:26:00 CST" name="testC" data-provider="dataSuiteC" finished-at="2021-02-25T09:26:00 CST" duration-ms="6" status="FAIL">
+        <test-method signature="testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@2525ff7e]" started-at="2021-03-02T08:07:42 CST" name="testC" data-provider="dataSuiteC" finished-at="2021-03-02T08:07:42 CST" duration-ms="14" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -202,7 +214,7 @@ a is not equals to b]]>
 a is not equals to b
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at testBase.TestBase.failAndStop(TestBase.java:51)
+at testBase.TestBase.failAndStop(TestBase.java:68)
 at suitec.TestC.testC(TestC.java:14)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -243,27 +255,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testC -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suitec.TestC@44a7bfbc]" started-at="2021-02-25T09:26:00 CST" name="quit" finished-at="2021-02-25T09:26:00 CST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suitec.TestC@2525ff7e]" started-at="2021-03-02T08:07:42 CST" name="quit" finished-at="2021-03-02T08:07:42 CST" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitec.TestC@44a7bfbc]" started-at="2021-02-25T09:26:00 CST" name="init" finished-at="2021-02-25T09:26:00 CST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitec.TestC@2525ff7e]" started-at="2021-03-02T08:07:42 CST" name="init" finished-at="2021-03-02T08:07:42 CST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@460f76a6]]>
+                <![CDATA[org.testng.TestRunner@7c041b41]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestC.testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@44a7bfbc] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestC.testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@2525ff7e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@44a7bfbc]" started-at="2021-02-25T09:26:00 CST" name="testC" data-provider="dataSuiteC" finished-at="2021-02-25T09:26:00 CST" duration-ms="3" status="FAIL">
+        <test-method signature="testC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestC@2525ff7e]" started-at="2021-03-02T08:07:42 CST" name="testC" data-provider="dataSuiteC" finished-at="2021-03-02T08:07:42 CST" duration-ms="13" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -286,7 +298,7 @@ a is not equals to b]]>
 a is not equals to b
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at testBase.TestBase.failAndStop(TestBase.java:51)
+at testBase.TestBase.failAndStop(TestBase.java:68)
 at suitec.TestC.testC(TestC.java:14)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -327,31 +339,31 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testC -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suitec.TestC@44a7bfbc]" started-at="2021-02-25T09:26:00 CST" name="quit" finished-at="2021-02-25T09:26:00 CST" duration-ms="20" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suitec.TestC@2525ff7e]" started-at="2021-03-02T08:07:42 CST" name="quit" finished-at="2021-03-02T08:07:42 CST" duration-ms="329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- suitec.TestC -->
     </test> <!-- Test C -->
-    <test started-at="2021-02-25T09:26:00 CST" name="Test CC" finished-at="2021-02-25T09:26:06 CST" duration-ms="6126">
+    <test started-at="2021-03-02T08:07:42 CST" name="Test CC" finished-at="2021-03-02T08:07:49 CST" duration-ms="6182">
       <class name="suitec.TestCC">
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitec.TestCC@5939a379]" started-at="2021-02-25T09:26:00 CST" name="init" finished-at="2021-02-25T09:26:00 CST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitec.TestCC@306cf3ea]" started-at="2021-03-02T08:07:42 CST" name="init" finished-at="2021-03-02T08:07:42 CST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@76a82f33]]>
+                <![CDATA[org.testng.TestRunner@2cab9998]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestCC.testCC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestCC@5939a379] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestCC.testCC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestCC@306cf3ea] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testCC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestCC@5939a379]" started-at="2021-02-25T09:26:00 CST" name="testCC" data-provider="dataSuiteC" finished-at="2021-02-25T09:26:03 CST" duration-ms="3013" status="FAIL">
+        <test-method signature="testCC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestCC@306cf3ea]" started-at="2021-03-02T08:07:42 CST" name="testCC" data-provider="dataSuiteC" finished-at="2021-03-02T08:07:45 CST" duration-ms="3015" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -414,27 +426,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCC -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suitec.TestCC@5939a379]" started-at="2021-02-25T09:26:03 CST" name="quit" finished-at="2021-02-25T09:26:03 CST" duration-ms="61" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suitec.TestCC@306cf3ea]" started-at="2021-03-02T08:07:45 CST" name="quit" finished-at="2021-03-02T08:07:45 CST" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitec.TestCC@5939a379]" started-at="2021-02-25T09:26:03 CST" name="init" finished-at="2021-02-25T09:26:03 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitec.TestCC@306cf3ea]" started-at="2021-03-02T08:07:45 CST" name="init" finished-at="2021-03-02T08:07:45 CST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@76a82f33]]>
+                <![CDATA[org.testng.TestRunner@2cab9998]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestCC.testCC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestCC@5939a379] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestCC.testCC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestCC@306cf3ea] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testCC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestCC@5939a379]" started-at="2021-02-25T09:26:03 CST" name="testCC" data-provider="dataSuiteC" finished-at="2021-02-25T09:26:06 CST" duration-ms="3003" status="FAIL">
+        <test-method signature="testCC(java.lang.String, java.lang.String)[pri:0, instance:suitec.TestCC@306cf3ea]" started-at="2021-03-02T08:07:45 CST" name="testCC" data-provider="dataSuiteC" finished-at="2021-03-02T08:07:48 CST" duration-ms="3005" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -497,39 +509,45 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCC -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suitec.TestCC@5939a379]" started-at="2021-02-25T09:26:06 CST" name="quit" finished-at="2021-02-25T09:26:06 CST" duration-ms="36" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suitec.TestCC@306cf3ea]" started-at="2021-03-02T08:07:48 CST" name="quit" finished-at="2021-03-02T08:07:48 CST" duration-ms="81" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- suitec.TestCC -->
     </test> <!-- Test CC -->
   </suite> <!-- Suite C -->
-  <suite started-at="2021-02-25T09:26:06 CST" name="My Test Suite" finished-at="2021-02-25T09:26:06 CST" duration-ms="0">
+  <suite started-at="2021-03-02T08:07:49 CST" name="My Test Suite" finished-at="2021-03-02T08:07:49 CST" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- My Test Suite -->
-  <suite started-at="2021-02-25T09:25:34 CST" name="Suite A" finished-at="2021-02-25T09:25:47 CST" duration-ms="13072">
+  <suite started-at="2021-03-02T08:07:15 CST" name="Suite A" finished-at="2021-03-02T08:07:29 CST" duration-ms="14743">
     <groups>
+      <group name="sanity">
+        <method signature="TestA.testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@672872e1]" name="testA" class="suitea.TestA"/>
+      </group> <!-- sanity -->
+      <group name="Browser">
+        <method signature="TestA.testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@672872e1]" name="testA" class="suitea.TestA"/>
+      </group> <!-- Browser -->
     </groups>
-    <test started-at="2021-02-25T09:25:34 CST" name="Test A" finished-at="2021-02-25T09:25:41 CST" duration-ms="6879">
+    <test started-at="2021-03-02T08:07:15 CST" name="Test A" finished-at="2021-03-02T08:07:23 CST" duration-ms="8339">
       <class name="suitea.TestA">
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitea.TestA@2b4bac49]" started-at="2021-02-25T09:25:34 CST" name="init" finished-at="2021-02-25T09:25:35 CST" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitea.TestA@672872e1]" started-at="2021-03-02T08:07:15 CST" name="init" finished-at="2021-03-02T08:07:15 CST" duration-ms="677" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@644c78d4]]>
+                <![CDATA[org.testng.TestRunner@3a1d593e]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestA.testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@2b4bac49] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestA.testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@672872e1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@2b4bac49]" started-at="2021-02-25T09:25:35 CST" name="testA" data-provider="dataSuiteA" finished-at="2021-02-25T09:25:38 CST" duration-ms="3015" status="PASS">
+        <test-method signature="testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@672872e1]" started-at="2021-03-02T08:07:15 CST" name="testA" data-provider="dataSuiteA" finished-at="2021-03-02T08:07:18 CST" duration-ms="3029" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -545,27 +563,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suitea.TestA@2b4bac49]" started-at="2021-02-25T09:25:38 CST" name="quit" finished-at="2021-02-25T09:25:38 CST" duration-ms="514" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suitea.TestA@672872e1]" started-at="2021-03-02T08:07:18 CST" name="quit" finished-at="2021-03-02T08:07:20 CST" duration-ms="1427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitea.TestA@2b4bac49]" started-at="2021-02-25T09:25:38 CST" name="init" finished-at="2021-02-25T09:25:38 CST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitea.TestA@672872e1]" started-at="2021-03-02T08:07:20 CST" name="init" finished-at="2021-03-02T08:07:20 CST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@644c78d4]]>
+                <![CDATA[org.testng.TestRunner@3a1d593e]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestA.testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@2b4bac49] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestA.testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@672872e1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@2b4bac49]" started-at="2021-02-25T09:25:38 CST" name="testA" data-provider="dataSuiteA" finished-at="2021-02-25T09:25:41 CST" duration-ms="3013" status="PASS">
+        <test-method signature="testA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestA@672872e1]" started-at="2021-03-02T08:07:20 CST" name="testA" data-provider="dataSuiteA" finished-at="2021-03-02T08:07:23 CST" duration-ms="3003" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -581,31 +599,31 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suitea.TestA@2b4bac49]" started-at="2021-02-25T09:25:41 CST" name="quit" finished-at="2021-02-25T09:25:41 CST" duration-ms="32" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suitea.TestA@672872e1]" started-at="2021-03-02T08:07:23 CST" name="quit" finished-at="2021-03-02T08:07:23 CST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- suitea.TestA -->
     </test> <!-- Test A -->
-    <test started-at="2021-02-25T09:25:41 CST" name="Test AA" finished-at="2021-02-25T09:25:47 CST" duration-ms="6143">
+    <test started-at="2021-03-02T08:07:23 CST" name="Test AA" finished-at="2021-03-02T08:07:29 CST" duration-ms="6287">
       <class name="suitea.TestAA">
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitea.TestAA@1356d4d4]" started-at="2021-02-25T09:25:41 CST" name="init" finished-at="2021-02-25T09:25:41 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitea.TestAA@3c947bc5]" started-at="2021-03-02T08:07:23 CST" name="init" finished-at="2021-03-02T08:07:23 CST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7bb3a9fe]]>
+                <![CDATA[org.testng.TestRunner@7859e786]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestAA.testAA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestAA@1356d4d4] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestAA.testAA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestAA@3c947bc5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testAA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestAA@1356d4d4]" started-at="2021-02-25T09:25:41 CST" name="testAA" data-provider="dataSuiteA" finished-at="2021-02-25T09:25:44 CST" duration-ms="3014" status="FAIL">
+        <test-method signature="testAA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestAA@3c947bc5]" started-at="2021-03-02T08:07:23 CST" name="testAA" data-provider="dataSuiteA" finished-at="2021-03-02T08:07:26 CST" duration-ms="3033" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -668,27 +686,27 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAA -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suitea.TestAA@1356d4d4]" started-at="2021-02-25T09:25:44 CST" name="quit" finished-at="2021-02-25T09:25:44 CST" duration-ms="58" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suitea.TestAA@3c947bc5]" started-at="2021-03-02T08:07:26 CST" name="quit" finished-at="2021-03-02T08:07:26 CST" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitea.TestAA@1356d4d4]" started-at="2021-02-25T09:25:44 CST" name="init" finished-at="2021-02-25T09:25:44 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="init(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:suitea.TestAA@3c947bc5]" started-at="2021-03-02T08:07:26 CST" name="init" finished-at="2021-03-02T08:07:26 CST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7bb3a9fe]]>
+                <![CDATA[org.testng.TestRunner@7859e786]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name={null} status=CREATED method=TestAA.testAA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestAA@1356d4d4] output={null}]]]>
+                <![CDATA[[TestResult name={null} status=CREATED method=TestAA.testAA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestAA@3c947bc5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testAA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestAA@1356d4d4]" started-at="2021-02-25T09:25:44 CST" name="testAA" data-provider="dataSuiteA" finished-at="2021-02-25T09:25:47 CST" duration-ms="3010" status="FAIL">
+        <test-method signature="testAA(java.lang.String, java.lang.String)[pri:0, instance:suitea.TestAA@3c947bc5]" started-at="2021-03-02T08:07:26 CST" name="testAA" data-provider="dataSuiteA" finished-at="2021-03-02T08:07:29 CST" duration-ms="3015" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -751,7 +769,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAA -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:suitea.TestAA@1356d4d4]" started-at="2021-02-25T09:25:47 CST" name="quit" finished-at="2021-02-25T09:25:47 CST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:suitea.TestAA@3c947bc5]" started-at="2021-03-02T08:07:29 CST" name="quit" finished-at="2021-03-02T08:07:29 CST" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
