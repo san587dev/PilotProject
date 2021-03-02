@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import testBase.TestBase;
 
 public class TestC extends TestBase {
-    @Test(dataProviderClass = TestDataProvider.class, dataProvider = "dataSuiteC")
+    @Test(groups = {"sanity","Browser"},dataProviderClass = TestDataProvider.class, dataProvider = "dataSuiteC")
     public void testC(String username, String password) throws InterruptedException {
         log("Starting C");
         log("Starting a web page");

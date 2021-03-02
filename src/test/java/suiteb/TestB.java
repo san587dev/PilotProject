@@ -6,7 +6,7 @@ import testBase.TestBase;
 
 public class TestB extends TestBase {
 
-    @Test(dataProviderClass = TestDataProvider.class, dataProvider = "dataSuiteB")
+    @Test(groups = {"sanity","Browser"},dataProviderClass = TestDataProvider.class, dataProvider = "dataSuiteB")
     public void testB(String username, String password) throws InterruptedException {
         log("Starting B");
         log(username + " " + password);

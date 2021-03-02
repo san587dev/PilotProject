@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="My Test Suite">
+    <!--
 
-
-    <groups>
-        <run>
-            <include name="sanity"/>
-            <exclude name="smoke"></exclude>
-        </run>
-    </groups>
-
-
-    <parameter name="Browser" value="Chrome"></parameter>
-    <parameter name="browsergroup1" value="IE"></parameter>
-
+        <groups>
+            <run>
+                <include name="sanity"/>
+                <exclude name="smoke"></exclude>
+            </run>
+        </groups>
+    -->
+    <!--
+        <parameter name="browsergroup" value="Chrome"></parameter>
+        <parameter name="browsergroup1" value="IE"></parameter>
+        <parameter name="browsergroup2" value="Firefox"></parameter>
+        -->
 
     <listeners>
         <listener class-name="listener.MyTestNgListener"></listener>

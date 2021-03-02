@@ -32,6 +32,18 @@ public class TestBase {
 //        String arr[] = context.getIncludedGroups();
 //        System.out.println(arr[arr.length]);
 
+        //System.out.println("The total"+context.getAllTestMethods().length);
+
+        String groupNames[] = context.getAllTestMethods()[0].getGroups();
+        String browsergroup = "";
+        for (String g : groupNames) {
+            if (g.startsWith("browsergroup")) {
+                browsergroup = g;
+                break;
+            }
+        }
+        System.out.println("The browser group name is "+ browsergroup);
+
     }
 
     @AfterMethod
