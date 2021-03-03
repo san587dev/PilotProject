@@ -14,9 +14,9 @@ public class ZipAndSendMail {
     Session mailSession;
     MimeMessage emailMessage;
 
-    static String[] toEmails = {"san590dev@gmail.com", "san589dev@gmail.com"};
-    static String fromUser = "san588dev@gmail.com";
-    static String password = "";
+    static String[] toEmails = {"san590dev@gmail.com", "san589dev@gmail.com","san588dev@gmail.com"};
+    static String fromUser = "samk587587@gmail.com";
+    static String password = "Honda@5875";
 
     public static void main(String args[]) throws Exception {
         String reportFolder = System.getProperty("user.dir") + "//reports//";
