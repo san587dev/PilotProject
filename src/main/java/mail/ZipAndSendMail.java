@@ -8,6 +8,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Properties;
 
+//mvn exec:java -Dexec.mainClass="mail.ZipAndSendMail"
+//mvn -Dmaven.test.failure.ignore=true test exec:java -Dexec.mainClass="mail.ZipAndSendMail"
 public class ZipAndSendMail {
 
     Properties emailProperties;
