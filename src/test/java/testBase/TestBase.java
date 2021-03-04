@@ -29,7 +29,7 @@ public class TestBase {
     public ExtentTest test;
     public SoftAssert softAssert;
     public String browser;
-    WebDriver driver;
+    public WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
     public void init(ITestContext context, ITestResult result) {
@@ -91,7 +91,7 @@ public class TestBase {
     public WebDriver launchBrowser(String browserName) {
         if (browserName.equals("Firefox")) {
 
-            System.setProperty("webdriver.gecko.driver", "D:\\Softwares\\AllDrivers\\geckodriver.exe");
+            System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"\\drivers\\geckodriver.exe");
             System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "logs\\firefox.log");
             FirefoxOptions firefoxOptions = new FirefoxOptions();
             firefoxOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
@@ -107,7 +107,7 @@ public class TestBase {
             driver = new FirefoxDriver(firefoxOptions);
 
         } else if (browserName.equals("Chrome")) {
-            System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\AllDrivers\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") +"\\drivers\\chromedriver.exe");
             System.setProperty(ChromeDriverService.CHROME_DRIVER_LOG_PROPERTY, "logs\\chrome.log");
             System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 
@@ -120,7 +120,7 @@ public class TestBase {
 
             driver = new ChromeDriver(chromeOptions);
         } else if (browserName.equals("Edge")) {
-            System.setProperty("webdriver.edge.driver", "D:\\Softwares\\AllDrivers\\msedgedriver.exe");
+            System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") +"\\drivers\\msedgedriver.exe");
 
             EdgeOptions edgeOptions = new EdgeOptions();
             edgeOptions.addArguments("--disable-notifications");
@@ -130,6 +130,7 @@ public class TestBase {
             driver = new EdgeDriver(edgeOptions);
         }
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+
         return driver;
     }
 
