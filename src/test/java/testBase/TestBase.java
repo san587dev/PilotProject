@@ -21,7 +21,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
 import reports.ExtentManager;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Locale;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
@@ -30,6 +33,7 @@ public class TestBase {
     public SoftAssert softAssert;
     public String browser;
     public WebDriver driver;
+    public Properties properties = null;
 
     @BeforeMethod(alwaysRun = true)
     public void init(ITestContext context, ITestResult result) {
@@ -113,7 +117,7 @@ public class TestBase {
 
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--disable-notifications");
-            chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
+            //chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
             chromeOptions.addArguments("--start-maximized");
             chromeOptions.addArguments("ignore-certificate-errors");
             chromeOptions.addArguments("user-data-dir=C:\\Users\\SANTOS~1\\AppData\\Local\\Temp\\scoped_dir13924_901200296\\Profile 1");
@@ -130,6 +134,15 @@ public class TestBase {
             driver = new EdgeDriver(edgeOptions);
         }
         driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+
+
+        try {
+            properties = new Properties();
+            FileInputStream fs = new FileInputStream(System.getProperty("user.dir") + "//src//test//resources//project.properties");
+            properties.load(fs);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         return driver;
     }
