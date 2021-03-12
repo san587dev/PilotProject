@@ -53,6 +53,7 @@ public class SakraWorldTest extends TestBase {
         SimpleDateFormat sd = new SimpleDateFormat("MM-dd-yyyy");
         try {
             Date dateToBeSelected = sd.parse(dob);
+            Date currentDate = new Date();
             String month = new SimpleDateFormat("MMMM").format(dateToBeSelected);
             System.out.println(month);
             String date = new SimpleDateFormat("dd").format(dateToBeSelected);
@@ -61,11 +62,22 @@ public class SakraWorldTest extends TestBase {
             System.out.println(year);
             String monthAndYearToBeSelected = month + " " + year;
             System.out.println("Month and Year is selected " + monthAndYearToBeSelected);
+
+            while (!monthAndYearToBeSelected.equals(monthYearDisplayed)) {
+                /*click on forword or backword button */
+                if (dateToBeSelected.compareTo(currentDate) == 1) {
+//fowordword icon
+                } else if (dateToBeSelected.compareTo(currentDate) == -1) {
+                    driver.findElement(By.xpath(properties.getProperty("calender_back"))).click();
+                }
+                monthYearDisplayed = driver.findElement(By.cssSelector(properties.getProperty("MonthYear"))).getText();
+                System.out.println("month & Year Displayed After the change - " + monthYearDisplayed);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         driver.quit();
 
     }
