@@ -7,8 +7,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import testBase.TestBase;
 
+import javax.xml.crypto.Data;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 public class SakraWorldTest extends TestBase {
@@ -34,8 +37,33 @@ public class SakraWorldTest extends TestBase {
         driver.findElement(By.xpath(properties.getProperty("phone"))).sendKeys(properties.getProperty("phoneNumber"));
         WebElement gender = driver.findElement(By.id(properties.getProperty("genderName")));
 
+        /*Selecting the gender
+         */
         Select s = new Select(gender);
         s.selectByVisibleText("Male");
+        /* Selecting the Date Dynamically */
+
+        driver.findElement(By.id(properties.getProperty("DOB"))).click();
+        String dob = properties.getProperty("dob_value");
+        System.out.println(dob);
+        log("Entered Date of Birth is " + dob);
+        String monthYearDisplayed = driver.findElement(By.cssSelector(properties.getProperty("MonthYear"))).getText();
+        System.out.println("month & Year Displayed - " + monthYearDisplayed);
+        /*By using SimpleDateFormat*/
+        SimpleDateFormat sd = new SimpleDateFormat("MM-dd-yyyy");
+        try {
+            Date dateToBeSelected = sd.parse(dob);
+            String month = new SimpleDateFormat("MMMM").format(dateToBeSelected);
+            System.out.println(month);
+            String date = new SimpleDateFormat("dd").format(dateToBeSelected);
+            System.out.println(date);
+            String year = new SimpleDateFormat("yyyy").format(dateToBeSelected);
+            System.out.println(year);
+            String monthAndYearToBeSelected = month + " " + year;
+            System.out.println("Month and Year is selected " + monthAndYearToBeSelected);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         Thread.sleep(5000);
         driver.quit();
