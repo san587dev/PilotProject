@@ -3,7 +3,9 @@ package suitea;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import testBase.TestBase;
 
@@ -43,11 +45,23 @@ public class SakraWorldTest extends TestBase {
         s.selectByVisibleText("Male");
         /* Selecting the Date Dynamically */
 
+        if(!isElementPresent(properties.getProperty("DOB")))
+            failAndStop("DOB field is not present/visible");
+
         driver.findElement(By.id(properties.getProperty("DOB"))).click();
         selectDate(properties.getProperty("dob_value"));
         /*System.out.println(dob);
         log("Entered Date of Birth is " + dob);
-*/
+         */
+
+
+        if(!isElementPresent(properties.getProperty("preferred_dateField")))
+            failAndStop("preferred_dateField field is not present/visible");
+
+        driver.findElement(By.id(properties.getProperty("preferred_dateField"))).click();
+        selectDate(properties.getProperty("preferred_date_1"));
+
+
         Thread.sleep(10000);
         driver.quit();
 
@@ -101,7 +115,7 @@ public class SakraWorldTest extends TestBase {
 
     public void wait(int time) {
         try {
-            Thread.sleep(time * 2000);
+            Thread.sleep(time * 1000);
         } catch (InterruptedException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -133,9 +147,14 @@ public class SakraWorldTest extends TestBase {
                     driver.findElement(By.xpath(properties.getProperty("calender_back"))).click();
                 }
                 monthYearDisplayed = driver.findElement(By.cssSelector(properties.getProperty("MonthYear"))).getText();
-                System.out.println("month & Year Displayed After the change - " + monthYearDisplayed);
+                //System.out.println("month & Year Displayed After the change - " + monthYearDisplayed);
             }
-            driver.findElement(By.xpath("//a[text()='" + date + "']")).click();
+            waitForPageToLoad();
+            /*WebDriverWait wait = new WebDriverWait(driver,50);
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//a[text()='"+ date +"']")));*/
+            driver.findElement(By.xpath("//a[text()='"+ date +"']")).click();
+            /*String selectedDOB = date + " " + monthYearDisplayed;
+            System.out.println("Selected DOB date is " + selectedDOB);*/
         } catch (Exception e) {
             e.printStackTrace();
         }
