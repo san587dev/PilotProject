@@ -44,39 +44,10 @@ public class SakraWorldTest extends TestBase {
         /* Selecting the Date Dynamically */
 
         driver.findElement(By.id(properties.getProperty("DOB"))).click();
-        String dob = properties.getProperty("dob_value");
-        System.out.println(dob);
+        selectDate(properties.getProperty("dob_value"));
+        /*System.out.println(dob);
         log("Entered Date of Birth is " + dob);
-        String monthYearDisplayed = driver.findElement(By.cssSelector(properties.getProperty("MonthYear"))).getText();
-        System.out.println("month & Year Displayed - " + monthYearDisplayed);
-        /*By using SimpleDateFormat*/
-        SimpleDateFormat sd = new SimpleDateFormat("MM-dd-yyyy");
-        try {
-            Date dateToBeSelected = sd.parse(dob);
-            Date currentDate = new Date();
-            String month = new SimpleDateFormat("MMMM").format(dateToBeSelected);
-            System.out.println(month);
-            String date = new SimpleDateFormat("dd").format(dateToBeSelected);
-            System.out.println(date);
-            String year = new SimpleDateFormat("yyyy").format(dateToBeSelected);
-            System.out.println(year);
-            String monthAndYearToBeSelected = month + " " + year;
-            System.out.println("Month and Year is selected " + monthAndYearToBeSelected);
-
-            while (!monthAndYearToBeSelected.equals(monthYearDisplayed)) {
-                /*click on forword or backword button */
-                if (dateToBeSelected.compareTo(currentDate) == 1) {
-//fowordword icon
-                } else if (dateToBeSelected.compareTo(currentDate) == -1) {
-                    driver.findElement(By.xpath(properties.getProperty("calender_back"))).click();
-                }
-                monthYearDisplayed = driver.findElement(By.cssSelector(properties.getProperty("MonthYear"))).getText();
-                System.out.println("month & Year Displayed After the change - " + monthYearDisplayed);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
+*/
         Thread.sleep(10000);
         driver.quit();
 
@@ -137,4 +108,37 @@ public class SakraWorldTest extends TestBase {
         }
     }
 
+    public void selectDate(String dateValue) {
+        String monthYearDisplayed = driver.findElement(By.cssSelector(properties.getProperty("MonthYear"))).getText();
+        System.out.println("month & Year Displayed - " + monthYearDisplayed);
+        /*By using SimpleDateFormat*/
+        SimpleDateFormat sd = new SimpleDateFormat("dd-MM-yyyy");
+        try {
+            Date dateToBeSelected = sd.parse(dateValue);
+            Date currentDate = new Date();
+            String month = new SimpleDateFormat("MMMM").format(dateToBeSelected);
+            System.out.println(month);
+            String date = new SimpleDateFormat("d").format(dateToBeSelected);
+            System.out.println(date);
+            String year = new SimpleDateFormat("yyyy").format(dateToBeSelected);
+            System.out.println(year);
+            String monthAndYearToBeSelected = month + " " + year;
+            System.out.println("Month and Year is selected " + monthAndYearToBeSelected);
+
+            while (!monthAndYearToBeSelected.equals(monthYearDisplayed)) {
+                /*click on forword or backword button */
+                if (dateToBeSelected.compareTo(currentDate) == 1) {
+                    driver.findElement(By.xpath(properties.getProperty("calender_next"))).click();
+                } else if (dateToBeSelected.compareTo(currentDate) == -1) {
+                    driver.findElement(By.xpath(properties.getProperty("calender_back"))).click();
+                }
+                monthYearDisplayed = driver.findElement(By.cssSelector(properties.getProperty("MonthYear"))).getText();
+                System.out.println("month & Year Displayed After the change - " + monthYearDisplayed);
+            }
+            driver.findElement(By.xpath("//a[text()='" + date + "']")).click();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+    }
 }
